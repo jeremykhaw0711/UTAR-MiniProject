@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!--Mobile Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Site Icons-->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!--Site Metas-->
+    <title>Risk Assessment &mdash; MySelamat</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet"/>
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/vaccine.css" />
+    <link rel="stylesheet" href="css/button.css" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="fonts/flaticon-covid/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+  </head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    
+   
+      <!--Heading-->
+      <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center">
+  
+            <div class="col-6 col-xl-2">
+              <div class="mb-0 site-logo">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="image"class="img-fluid" width="150px" height="50px">
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-12 col-md-10 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+  
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="sop.html" class="nav-link">COVID-19 SOP</a></li>
+                  <li><a href="riskAssessment.html" class="nav-link">Risk Assessment</a></li>
+                  <li><a href="vaccine.html" class="nav-link">Vaccination</a></li>
+                  <li><a href="hotspot.html" class="nav-link">COVID-19 Hotspot</a></li>
+                </ul>
+              </nav>
+            </div>
+  
+  
+            <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
+  
+          </div>
+        </div>
+  
+      </header>
+      <!--End Header-->
+
+    
+
+    <div class="hero-v1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mr-auto text-center text-lg-left">
+            <span class="d-block subheading">COVID-19 Status Checking</span>
+            <h1 class="heading mb-3">Risk Assessment</h1>
+            <p class="mb-5">Below is the assessment to check your personal risk level and what to do next based on the risk assessment result.</p>
+
+
+
+          </div>
+          <div class="col-lg-6">
+            <figure class="illustration-2">
+              <img src="images/symptoms.png" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-6"></div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- MAIN -->
+    
+
+
+
+    <div class="site-section bg-primary-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <h2 class="mb-4 section-heading">Assessmment for Risk Checking</h2>
+            <p>Please fill in every question to ensure you get an accurate result. The result below record you as a participants but not personally identify you.</p>
+          </div>
+        </div>
+
+        <form id="risk_assessment_form" onsubmit="return false">
+          <fieldset form_id="risk_assessment_form">
+
+              <div id="question-age-container">
+                <div>
+                  <div id="question-age">
+                    <p style="font-size:30px">Your age:</p>
+                    <div>
+                      <div>
+                        <button name="btn1" id="0" class="button button6" onclick="disabled=true" >Below 9 years old</button>
+                        <button name="btn1" id="1" class="button button6" onclick="disabled=true" >9 years old and above</button>
+                        <button name="btn1" id="2" class="button button6" onclick="disabled=true" >10 to 19 years old</button>
+                        <button name="btn1" id="3" class="button button6" onclick="disabled=true" >20 to 29 years old</button>
+                        <button name="btn1" id="4" class="button button6" onclick="disabled=true" >30 to 39 years old</button>
+                        <button name="btn1" id="5" class="button button6" onclick="disabled=true" >40 to 49 years old</button>
+                        <button name="btn1" id="6" class="button button6" onclick="disabled=true" >50 to 59 years old</button>
+                        <button name="btn1" id="7" class="button button6" onclick="disabled=true" >60 years old and above</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div id="question-health-container">
+              <div>
+                  <div id="question-health">
+                    <p title="unhealthy state includes all diseases, lesions, and disorders" style="font-size:30px">Are you experiencing any medical conditions?</p>
+                  </div> 
+                  <button name="btn2" id="8" class="button button6" onclick="disabled=true" >Yes</button>
+                  <button name="btn2" id="9" class="button button6" onclick="disabled=true" >No</button>
+              </div>
+            </div>
+
+            <div id="question-smoke-container">
+              <div>
+                  <div id="question-smoke">
+                    <p style="font-size:30px">Do you smoke? </p>
+                  </div> 
+                  <button name="btn3" id="10" class="button button6" onclick="disabled=true" >Yes</button>
+                  <button name="btn3" id="11" class="button button6" onclick="disabled=true" >No</button>
+              </div>
+            </div>
+
+            <div id="question-symptoms-container">
+              <div>
+                  <div id="question-symptoms">
+                    <p style="font-size:30px">Do you have any symptoms listed below?</p>
+                  </div> 
+                  <button title="abnormally high body temperature" name="btn4" id="12" class="button button6" onclick="disabled=true" >Fever</button>
+                  <button title="cough that doesn't bring up mucus" name="btn4" id="13" class="button button6" onclick="disabled=true" >Dry Cough</button>
+                  <button title="extreme tiredness resulting from mental or physical exertion or illness" name="btn4" id="14" class="button button6" onclick="disabled=true" >Fatigue</button>
+                  <button name="btn4" id="15" class="button button6" onclick="disabled=true" >Loss of taste/smell</button>
+                  <button title="stuffy nose" name="btn4" id="16" class="button button6" onclick="disabled=true" >Nasal congestion</button>
+                  <button title="Pink eye" name="btn4" id="17" class="button button6" onclick="disabled=true" >Conjunctivitis</button>
+                  <button name="btn4" id="18" class="button button6" onclick="disabled=true" >Sore throat</button>
+                  <button name="btn4" id="19" class="button button6" onclick="disabled=true" >Headache</button>
+                  <button name="btn4" id="20" class="button button6" onclick="disabled=true" >Muscle or joint pain</button>
+                  <button title="Nausea: feeling of vomit" name="btn4" id="21" class="button button6" onclick="disabled=true" >Nausea or vomiting</button>
+                  <button title="a condition in which faeces are discharged from the bowels frequently and in a liquid form" name="btn4" id="22" class="button button6" onclick="disabled=true" >Diarrhea</button>
+                  <button title="Chills: feeling cold" name="btn4" id="23" class="button button6" onclick="disabled=true" >Chills or dizziness</button>
+                  <button name="btn4" id="24" class="button button6" onclick="disabled=true" >Shortness of breath</button>
+                  <button title="not feeling to eat" name="btn4" id="25" class="button button6" onclick="disabled=true" >Loss of appetite</button>
+                  <button name="btn4" id="26" class="button button6" onclick="disabled=true" >Confusion</button>
+                  <button name="btn4" id="27" class="button button6" onclick="disabled=true" >Persistent pain/pressure in the chest</button>
+                  <button name="btn4" id="28" class="button button6" onclick="disabled=true" >None of the above</button>
+              </div>
+            </div>
+
+            <div id="question-habits-container">
+              <div>
+                  <div id="question-habits">
+                    <p style="font-size:30px">Which habits you keep practicing during this pandemic when you go out?</p>
+                  </div> 
+                  <button name="btn5" id="29" class="button button6" onclick="disabled=true" >Use of mask</button>
+                  <button name="btn5" id="30" class="button button6" onclick="disabled=true" >Wash hand frequently</button>
+                  <button name="btn5" id="31" class="button button6" onclick="disabled=true" >Sanitize before touching face</button>
+                  <button name="btn5" id="32" class="button button6" onclick="disabled=true" >Practicing social distancing</button>
+                  <button name="btn5" id="33" class="button button6" onclick="disabled=true" >Avoid crowded places</button>
+                  <button name="btn5" id="34" class="button button6" onclick="disabled=true" >Avoid close-contact</button>
+                  <button name="btn5" id="35" class="button button6" onclick="disabled=true" >Avoid staying at confined and enclosed spaces</button> 
+                  <button name="btn5" id="36" class="button button6" onclick="disabled=true" >None of the above</button>
+              </div>
+            </div>
+
+            <div id="question-gatherings-container">
+              <div>
+                  <div id="question-gatherings">
+                    <p style="font-size:30px">Do you attended any mass gatherings in the past 14 days?</p>
+                  </div> 
+                  <button name="btn6" id="37" class="button button6" onclick="disabled=true" >Yes</button>
+                  <button name="btn6" id="38" class="button button6" onclick="disabled=true" >No</button>
+              </div>
+            </div>
+
+            <div id="question-travel-container">
+              <div>
+                  <div id="question-travel">
+                    <p style="font-size:30px">Do you travel to somewhere which has high COVID-19 infection cases in the past 14 days?</p>
+                  </div> 
+                  <button name="btn7" id="39" class="button button6" onclick="disabled=true" >Yes</button>
+                  <button name="btn7" id="40" class="button button6" onclick="disabled=true" >No</button>
+            </div>
+
+            <div id="question-approached-container">
+              <div>
+                  <div id="question-approached">
+                    <p style="font-size:30px">Do you approached to someone who suspected/confirmed with COVID-19 infection in the past 14 days?</p>
+                  </div> 
+                  <button name="btn8" id="41" class="button button6" onclick="disabled=true" >Yes</button>
+                  <button name="btn8" id="42" class="button button6" onclick="disabled=true" >No</button>
+              </div>
+            </div>
+            
+            <table style="margin-left:20px; margin-top:10px; width:600px">
+              <tbody>
+                <tr>
+                  <td><a type="submit" form_id="risk_assessment_form" class="button button1" onclick="totalRisk() + suggestion()">Submit</a></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div id="result" class="site-section bg-primary-light" style="display:none">
+              <div class="container">
+                <div class="row mb-5">
+                  <div class="col-lg-7 mx-auto text-center">
+                    <h2 class="mb-4 section-heading">Your Risk:</h2>
+                      <p style="font-size: 15px">Range: 0%(Totally Safe), Between 0% and 40%(Safe), Between 41% and 60%(At Risk), Between 60% to 80%(High Risk), 100%(COVID-19 Positive)</p>
+                      <div id="output" style="font-size: 40px; color:red; font-weight:800;"></div>
+                  </div>
+                </div>
+        
+                <div class="container">
+                    <div class="row mb-5">
+                      <div class="col-lg-7 mx-auto text-center">
+                        <h2 class="mb-4 section-heading1">Suggestion</h2>
+                        <div id="suggestion" style="font-size:30px" ></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+        &ensp;
+        
+      </div>
+    </div>
+
+   <!--Footer-->
+   <div class="site-footer bg-primary-light" style="vertical-align: middle;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2 class="footer-heading mb-4">About</h2>
+          <p text-align: justify>This website is a  website that developed to support in managing the Covid-19 outbreaks in Malaysia. This website is aimed to reduce health risks to the public and business premises. Also ensure that the user can register for vaccination besides getting knowledge about Covid-19.</p>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+          <div class="row">
+
+            <div class="col-lg-5">
+              <h2 class="footer-heading mb-4">Quick Links</h2>
+              <ul class="list-unstyled">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="sop.html" class="nav-link">COVID-19 SOP</a></li>
+              <li><a href="riskAssessment.html" class="nav-link">Risk Assessment</a></li>
+              <li><a href="vaccination.html" class="nav-link">Vaccination</a></li>
+              <li><a href="hotspot.html" class="nav-link">COVID-19 Hotspot</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-5">
+              <h2 class="footer-heading mb-4">Resources</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://www.who.int/">WHO Website</a></li>
+                <li><a href="http://covid-19.moh.gov.my/">MOH Website</a></li>
+                <li><a href="https://www.vaksincovid.gov.my/">JKJAV Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <div class="border-top pt-5">
+            <p><small>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank" >Corona Project - UCCC2513 Mini Project</a>
+            </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script>
+
+    function button1(){
+      var sum1 = 0; 
+      for(var x=0; x<=7; x++){
+        var button = document.getElementsByName('btn1');
+        if (document.getElementById(7).disabled==true)
+        {
+          var a = 0.5;
+        }
+        else if (document.getElementById(x).disabled==true)
+        {
+          var a = 0.3;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum1 = sum1 + a;
+      }
+      return sum1;
+    }
+
+    function button2(){
+      var sum2 = 0; 
+      for(var x=8; x<=9; x++){
+        var button = document.getElementsByName('btn2');
+        if (document.getElementById(x).disabled==true)
+        {
+          var a = 1;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum2 = sum2 + a;
+      }
+      return sum2;
+    }
+
+    function button3(){
+      var sum3 = 0; 
+      for(var x=10; x<=11; x++){
+        var button = document.getElementsByName('btn3');
+        if (document.getElementById(x).disabled==true)
+        {
+          var a = 1;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum3 = sum3 + a;
+      }
+      return sum3;
+    }
+
+    function button4(){
+      var sum4 = 0; 
+      for(var x=12; x<=28; x++){
+        var button = document.getElementsByName('btn4');
+        if (document.getElementById(28).disabled==true)
+        {
+          var a = 0;
+        }
+        else if(document.getElementById(x).disabled==true){
+          var a = 1;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum4 = sum4 + a;
+      }
+      return sum4;
+    }
+
+    function button5(){
+      var sum5 = 0; 
+      for(var x=29; x<=36; x++){
+        var button = document.getElementsByName('btn5');
+        if (document.getElementById(36).disabled==true){
+          var a = 1;
+        }
+        else if(document.getElementById(x).disabled==true){
+          var a = 0;
+        }
+        else
+        {
+          var a = 1;
+        }
+        sum5 = sum5 + a;
+      }
+      return sum5;
+    }
+
+    function button6(){
+      var sum6 = 0; 
+      for(var x=37; x<=38; x++){
+        var button = document.getElementsByName('btn6');
+        if (document.getElementById(x).disabled==true)
+        {
+          var a = 1;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum6 = sum6 + a;
+      }
+      return sum6;
+    }
+
+    function button7(){
+      var sum7 = 0; 
+      for(var x=39; x<=40; x++){
+        var button = document.getElementsByName('btn7');
+        if (document.getElementById(x).disabled==true)
+        {
+          var a = 1;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum7 = sum7 + a;
+      }
+      return sum7;
+    }
+
+    function button8(){
+      var sum8 = 0; 
+      for(var x=41; x<=42; x++){
+        var button = document.getElementsByName('btn8');
+        if (document.getElementById(x).disabled==true)
+        {
+          var a = 1;
+        }
+        else
+        {
+          var a = 0;
+        }
+        sum8 = sum8 + a;
+      }
+      return sum8;
+    }
+
+    function algorithm(){
+      sum1 = button1();
+      sum2 = button2();
+      sum3 = button3();
+      sum4 = button4();
+      sum5 = button5();
+      sum6 = button6();
+      sum7 = button7();
+      sum8 = button8();
+
+      healthRisk = (sum1 + sum2 + sum3 + sum4)/20;
+      behaviourRisk = (sum5)/8;
+      exposureRisk = (sum6 + sum7 + sum8)/3;
+      if(sum4 != 16)
+      {
+        algo = ((healthRisk*0.5) + (behaviourRisk*0.2) + (exposureRisk*0.3))*100;
+      }
+      else
+      {
+        algo = 1*100;
+      }
+      return algo.toPrecision(4);
+    }
+
+    function totalRisk(){
+      algo = algorithm();
+      document.getElementById('result').style.display='block';
+      document.getElementById('output').innerHTML=algo+"%";
+    }
+
+    function suggestion(){
+      algo = algorithm();
+      if(algo >= 70)
+      {
+        document.getElementById('suggestion').innerHTML="You are highly suspected to be infected by COVID-19. Please go to hospital immediately for further treatment. \t Contact 999 for emergency.\n For more information, please go to \n <a style='color:purple' href='https://covid-19.moh.gov.my/garis-panduan/garis-panduan-kkm/ANNEX_2_Management_of_Suspected_Probable_and_Confirmed_COVID19_04062021.pdf'>here</a>";
+      }
+      else if(algo < 70 && algo >= 60)
+      {
+        document.getElementById('suggestion').innerHTML="Please go to hospital nearby or clinic nearby for COVID-19 test immediately. You probably infected by COVID-19.\n For more information, please go to \n <a style='color:pueple' href='https://covid-19.moh.gov.my/garis-panduan/garis-panduan-kkm/ANNEX_2a_Flowchart_Management_of_Suspected_COVID-19_Case_as_Outpatient_13082021.pdf'>here</a>";
+      }
+      else if(algo < 60 && algo > 40)
+      {
+        document.getElementById('suggestion').innerHTML="Please perform self quarantine. If have any further symptoms as listed or not feeling well, please go to hospital or clinic nearby for COVID-19 test immediately.\n For more information, please go to \n <a style='color:purple' href='https://covid-19.moh.gov.my/garis-panduan/garis-panduan-kkm/Annex_2m_Guidelines_on_Home_Monitoring_and_Clinical_Protocol_at_Primary_Care_for_Category_1_and_2_Mild_Confirmed_COVID-19_Cases.pdf'>here</a>";
+      }
+      else
+      {
+        document.getElementById('suggestion').innerHTML="You are temporary safe from COVID-19 but do please practice SOP of preventing COVID-19 to protect you and your family. \n For more information, please go to \n <a href='https://covid-19.moh.gov.my/garis-panduan/garis-panduan-kkm/ANNEX_2_Management_of_Suspected_Probable_and_Confirmed_COVID19_04062021.pdf'>here</a>";
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
